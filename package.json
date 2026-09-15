@@ -1,0 +1,32 @@
+{
+  "name": "fordoportro3.0",
+  "version": "1.0.0",
+  "description": "Fordoportro (ফর্দপত্র) - Bangladeshi Online Grocery & Wholesale Platform with Automated WhatsApp Notification",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "seed": "node -e \"const { connectDB } = require('./server/config/db'); connectDB().then(() => console.log('Database Ready')).catch(console.error);\""
+  },
+  "keywords": [
+    "grocery",
+    "ecommerce",
+    "bangladesh",
+    "whatsapp",
+    "mongodb",
+    "firebase"
+  ],
+  "author": "Fordoportro Team",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.13.0"
+  }
+}
