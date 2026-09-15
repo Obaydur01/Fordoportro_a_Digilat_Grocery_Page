@@ -1,4 +1,4 @@
-# 🛍️ ফর্দপত্র (Fordoportro 3.0)
+# 🛍️ ফর্দপত্র (Fordoportro)
 
 > **Bangladeshi Online Grocery & Wholesale E-Commerce Platform with Automated WhatsApp Notification**
 
